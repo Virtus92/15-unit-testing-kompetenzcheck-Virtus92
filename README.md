@@ -1,17 +1,15 @@
-# Thema des Kapitels
+# UnitTests - Kompetenzcheck
 
 ## Lernziele
 Der Teilnehmer/die Teilnehmerin kann nach erfolgreicher Absolvierung dieses Themas:
-- das Thema erklären
-- das Thema anwenden, indem ein 
-- seinen/ihren Code erklären
-- seinen Code in GitHub einchecken
+- erklären, was Unittests sind
+- erklären, wozu Unittests ein MUSS sind
+- erklären, wie man herausfindet, welche Tests notwendig sind
+- Unittests für seine Programme schreiben
+- ein Programm schreiben, das den Clean-Code-Anforderungen entspricht
+- seinen\*ihren Code erklären
+- hat seinen\*ihren Code in GitHub eingecheckt
 
 ## Inhaltsverzeichnis
 
-1. [1. Kapitel - Beispiele in Markdown](chapter1.md)
-2. [2. Kapitel - Beispiel eines 2. Kapitels](chapter2.md)
-
-## Referenzen
-
-Hier kommt eine Liste von Links zu weiterführenden Inhalten (zB spezifische Inhalte, worauf man speziell achten muss, oder Inhalte, welche sich die Teilnehmer nur optional anschauen)
+1. [Kompetenzcheck](kompetenzcheck.md)
