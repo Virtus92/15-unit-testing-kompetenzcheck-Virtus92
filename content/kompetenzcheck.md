@@ -15,4 +15,4 @@ Schreibe nun Tests für diese beiden Klassen. Achte dabei darauf, dass alle Meth
 - Der Code ist gut strukturiert (Siehe Clean Code).
 - Der Code ist in GITHub eingecheckt.
 
-Zurück zur [Startseite](README.md)
+Zurück zur [Startseite](../README.md)
