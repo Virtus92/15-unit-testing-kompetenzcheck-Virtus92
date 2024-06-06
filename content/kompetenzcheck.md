@@ -1,4 +1,4 @@
-# Vererbung - Kompetenzcheck
+# Unittesting - Kompetenzcheck
 
 ## Aufgabe: Unit Tests Stack und Queue
 
