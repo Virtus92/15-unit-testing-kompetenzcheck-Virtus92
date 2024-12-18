@@ -38,12 +38,21 @@ public class StackTest {
     void testPush() {
         stack.push(1);
         stack.push(2);
-        stack.push(3);
+        assertEquals(2, stack.size());
+    }
 
+    @Test
+    void testPop() {
+        stack.push(1);
+        stack.push(2);
+        assertEquals(2, stack.size());
+        assertEquals(2, stack.pop());
+    }
 
-        assertEquals(3, stack.size());
-        assertEquals(3, stack.pop());
-
+    @Test
+    void testPopN() {
+        stack.push(1);
+        stack.push(2);
         stack.push(3);
         stack.push(4);
         assertEquals(4, stack.peek());

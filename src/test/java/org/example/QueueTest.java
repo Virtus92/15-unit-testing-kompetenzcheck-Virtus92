@@ -18,26 +18,39 @@ public class QueueTest {
     }
 
     @Test
+    void testEnqueue() {
+        assertEquals(0, queue.size());
+        queue.enqueue(1);
+        assertEquals(1, queue.size());
+    }
+
+    @Test
+    void testDequeue(){
+        queue.enqueue(1);
+        queue.enqueue(2);
+        assertEquals(1, queue.dequeue());
+        assertEquals(0, queue.size());
+    }
+
+    @Test
+    void testDequeueN() {
+        assertEquals(0, queue.size());
+        queue.enqueue(1);
+        queue.enqueue(2);
+        queue.enqueue(3);
+        assertEquals(3, queue.size());
+        assertArrayEquals(new int[]{1,2}, queue.dequeue(2));
+        assertEquals(1, queue.size());
+    }
+
+    @Test
     void testDequeueOnEmptyQueue() {
         assertThrows(EmptyStackException.class, () -> queue.dequeue());
     }
 
     @Test
     void testDequeueNOnEmptyQueue() {
-        queue.enqueue(1);
-        queue.enqueue(2);
-        queue.enqueue(3);
         assertThrows(EmptyStackException.class, () -> queue.dequeue(5));
     }
 
-    @Test
-    void testQueue() {
-        assertEquals(0, queue.size());
-        queue.enqueue(1);
-        queue.enqueue(2);
-        queue.enqueue(3);
-        assertEquals(3, queue.size());
-        assertEquals(1, queue.dequeue());
-        assertArrayEquals(new int[]{2,3}, queue.dequeue(2));
-    }
 }
